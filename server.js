@@ -3,8 +3,6 @@ const express = require('express')
 const http = require('http')
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3001;
-
-/*
 const passport = require('passport')
 const session = require('express-session')
 const cors = require('cors')
@@ -31,16 +29,11 @@ const GOOGLE_CONFIG = {
   // when registering the app
   callbackURL: 'http://127.0.0.1:3001/google/callback'
 }
-*/
-
 
 // Create the server and allow express and socketio to run on the same port
 const app = express()
 const server = http.createServer(app)
-
-/*
 const io = socketio(server)
-*/
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -50,7 +43,6 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-/*
 // Allows the application to accept JSON and use passport
 app.use(express.json())
 app.use(passport.initialize())
@@ -134,7 +126,6 @@ app.get('/google/callback', googleAuth, (req, res) => {
   io.in(req.session.socketId).emit('google', req.user)
   res.end()
 })
-*/
 
 // Send every other request to the React app
 // Define any API routes before this runs
