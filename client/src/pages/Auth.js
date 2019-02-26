@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import constants from '../utils/constants';
 import Footer from '../components/Footer.js'
 import AuthButton from '../components/AuthButton.js'
-const API_URL = 'http://127.0.0.1:3001'
+const API_URL = 'https://sleepy-spire-66115.herokuapp.com' //'http://127.0.0.1:3001'
 const socket = io(API_URL)
 
 const Auth = (props) => {
