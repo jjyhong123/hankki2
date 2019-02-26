@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { connect } from 'react-redux';
 import constants from '../utils/constants';
 import { withRouter } from "react-router-dom"
-const API_URL = 'https://sleepy-spire-66115.herokuapp.com' //'http://127.0.0.1:3001'
+const API_URL = 'https://sleepy-spire-66115.herokuapp.com'
 
 class AuthButton extends Component {
 

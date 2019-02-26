@@ -17,7 +17,7 @@ const TWITTER_CONFIG = {
   consumerSecret: process.env.TWITTER_SECRET,
   // make sure the callbackUrl matches what was set on Twitter
   // when registering the app
-  callbackURL: 'https://sleepy-spire-66115.herokuapp.com/twitter/callback' // 'http://127.0.0.1:3001/twitter/callback'
+  callbackURL: 'https://sleepy-spire-66115.herokuapp.com/twitter/callback'
 }
 
 // Private api keys that you will get when registering an app on 
